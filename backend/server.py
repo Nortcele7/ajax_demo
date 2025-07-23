@@ -26,3 +26,7 @@ async def greet(payload: NameIn):
 @app.post("/api/hate")
 async def greet(payload: NameIn):
     return {"message": f"I hate you, {payload.name}!"}
+
+@app.post('api/love')
+async def greet(payload: NameIn):
+    return {'message': f"Much love ,{payload.name}"}
